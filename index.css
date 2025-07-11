@@ -1,0 +1,45 @@
+body {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+}
+
+h1 {
+  font-size: 3em;
+  animation: slideIn 1s ease;
+}
+
+img {
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+  animation: fadeIn 2s;
+}
+
+a {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 30px;
+  background-color: #0f0f0f;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background 0.3s;
+}
+
+a:hover {
+  background-color: #444;
+}
+
+/* Animations */
+@keyframes slideIn {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
