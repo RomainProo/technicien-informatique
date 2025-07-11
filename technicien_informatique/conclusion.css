@@ -1,0 +1,34 @@
+body {
+  background: #000;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 60px;
+}
+
+h2 {
+  font-size: 3em;
+  background: linear-gradient(to right, #00ffe0, #0077ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glow 2s ease infinite alternate;
+}
+
+img {
+  width: 400px;
+  border: 2px solid #00ffe0;
+  border-radius: 20px;
+  margin: 30px;
+  box-shadow: 0 0 20px #00ffe0;
+  animation: fadeIn 2s ease;
+}
+
+@keyframes glow {
+  0% { text-shadow: 0 0 10px #00ffe0; }
+  100% { text-shadow: 0 0 20px #00ffe0; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
